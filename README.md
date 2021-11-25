@@ -180,3 +180,140 @@
         3) React Native – Bridge
 
     This is often called “The 3 Parts of React Native”
+
+# Assignment 3
+
+## Fundamentals of React Native
+
+### What is React?
+
+    React is the  popular open source library for building user interfaces with JavaScript.
+    Core Concept Behind React:
+        1. Components: Basic Element in react. Can be Functional and Class.
+        2. Jsx: It the approach that allows you to write element in javascript.
+        3. Props: Props is short for "properties". Props let you customize React components.
+        4. State: state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
+
+### How React is different from Javascript Frameworks?
+
+1.  Simpification: React uses a special JSX syntax that lets you combine HTML with JavaScript.
+2.  Reusable Element: Technology used to be far more complicated than that, but ReactJS provides us with the ability to do just the same
+3.  Work well with SEO: ReactJS is working with SEO to perfection.
+4.  Performance.
+5.  Handy Support: React JS has gained credibility because of the availability of convenient set of tools, which allows the developers ‘ job even simpler.
+6.  Easier to create interactive web apps.
+7.  Access to Developers.
+8.  ReactJS is a stronger framework because of its ability to break down the complex interface and allow users to work on individual components
+9.  React has the very big community.
+
+### Whats is the relationship between react and react native?
+
+#### React Js
+
+##### React has as its main focus Web Development.
+
+    - React’s virtual DOM is faster than the conventional full refresh model, since the virtual DOM refreshes only parts of the page.
+    - You can reuse code components in React, saving you a lot of time. (You can in React Native too.)
+    - As a business: The rendering of your pages completely, from the server to the browser will improve the SEO of your web app.
+    - It improves the debugging speed making your developer’s life easier.
+    - You can use hybrid mobile app development, like Cordova or Ionic, to build mobile apps with React, but is more efficiently building mobile apps with React Native from many points.
+
+##### An extension of React, niched on Mobile Development.
+
+    - Its main focus is all about Mobile User Interfaces.
+    - iOS & Android are covered.
+    - Reusable React Native UI components & modules allow hybrid apps to render natively.
+    - No need to overhaul your old app. All you have to do is add React Native UI components into your existing app’s code, without having to rewrite.
+    - Doesn't use HTML to render the app. Provides alternative components that work in a similar way, so it wouldn't be hard to understand them.
+    - Because your code doesn’t get rendered in an HTML page, this also means you won’t be able to reuse any libraries you previously used with React that renders any kind of HTML, SVG or Canvas.
+    - React Native is not made from web elements and can’t be styled in the same way. Goodbye CSS Animations!
+
+### React Native Cli VS Expo Cli
+
+#### React Native CLI:
+
+##### Advantages:
+
+    1. You can add native modules written in Java/Objective-C (probably the strongest feature)
+    2. You will be having control over the builds.
+
+##### Disadvantages:
+
+1.  Needs Android Studio and XCode to run the projects.
+2.  You can't develop for iOS without having a mac.
+3.  Device has to be connected via USB to use it for testing.
+4.  Fonts need to be imported manually in XCode.
+5.  If you want to share the app you need to send the whole .apk / .ipa file.
+6.  Does not provide JS APIs out of the box, e.g. Push-Notifications, Asset Manager, they need to be manually installed and linked with npm for example.
+7.  Setting up a working project properly (inlcuding device configuration) is rather complicated and can take time.
+
+#### Expo CLI:
+
+##### Advantages:
+
+1.  Setting up a project is easy and can be done in minutes.
+2.  You (and other people) can open the project while you're working on it.
+3.  Sharing the app is easy (via QR-code or link), you don't have to send the whole .apk or .ipa file.
+4.  No build necessary to run the app.
+5.  Integrates some basic libraries in a standard project (Push Notifications, Asset Manager,...).
+6.  You can eject it to ExpoKit and integrate native code continuing using some of the Expo features, but not all of them.
+7.  Expo can build .apk and .ipa files (distribution to stores possible with Expo).
+
+### How does react native code compile and execute?
+
+    React Native uses the concept of “bridge”, which allows for asynchronous communication between the JavaScript and Native elements - the bridge concept lies at the very heart of React Native’s flexibility. Native and JavaScript elements are completely different technologies, but they are able to communicate.
+
+    This type of architecture offers the benefit of using a lot of OS-native features, but also comes with important challenges; e.g. constant use of bridges inside the app may significantly slow down its performance. If you’re building an app that involves many events, a lot of data, etc. React Native might not be the best option. More on that below.
+
+### How React Reconciliation works?
+
+Reconciliation is the process through which React updates the DOM. When a component’s state changes, React has to calculate if it is necessary to update the DOM. It does this by creating a virtual DOM and comparing it with the current DOM. In this context, the virtual DOM will contain the new state of the component.
+
+### TypeScript VS JavaScript
+
+**TypeScript Code is converted into Plain JavaScript Code:** : TypeScript code is not understandable by the browsers. That’s why if the code is written in TypeScript then it is compiled and converted the code i.e. translate the code into JavaScript.The above process is known as **Trans-piled**. With the help of JavaScript code, browsers are able to read the code and display it.
+**JavaScript is TypeScript:** Whatever code is written in JavaScript can be converted to TypeScript by changing the extension from .js to .ts.
+**Use TypeScript anywhere:** TypeScript code can be run on any browser, device, or in any operating system. TypeScript is not specific to any Virtual-machine etc.
+**TypeScript supports JS libraries:** With TypeScript, developers can use existing JavaScript code, incorporate popular JavaScript libraries, and can be called from other JavaScript code.
+
+#### Differece
+
+1.  TypeScript is known as an Object-oriented programming language whereas JavaScript is a scripting language.
+2.  TypeScript has a feature known as Static typing but JavaScript does not have this feature.
+3.  TypeScript gives support for modules whereas JavaScript does not support modules.
+4.  TypeScript has Interface but JavaScript does not have an Interface.
+
+#### Advantages
+
+    1. TypeScript always points out the compilation errors at the time of development only. Because of this in the run-time, the chance of getting errors is very less whereas JavaScript is an interpreted language.
+    2. TypeScript has a feature that is strongly typed or supports static typing. That means Static typing allows for checking type correctness at compile time. This is not available in JavaScript.
+    3. TypeScript is nothing but JavaScript and some additional features i.e. ES6 features. It may not be supported in your target browser but the TypeScript compiler can compile the .ts files into ES3, ES4, and ES5 also.
+
+#### Disadvantage
+
+    * Generally, TypeScript takes time to compile the code.
+
+### Hot Reload And Live Reload
+
+**Hot reloading** only refreshes the files that were changed without losing the state of the app. For example, if you were four links deep into your navigation and saved a change to some styling, the state would not change, but the new styles would appear on the page without having to navigate back to the page you are on because you would still be on the same page.
+
+**Live reloading** reloads or refreshes the entire app when a file changes. For example, if you were four links deep into your navigation and saved a change, live reloading would restart the app and load the app back to the initial route.
+
+### Which is better for react native app - Javascript vs typescript?
+
+Typescript is ultimalty transpiled to javascript. But when you write code in typescript and error of margin is very low as most of the error are resolved at complied time. And also your code is properly typed. For this reson most of the developers would prefer typescript over javascript although it takes some extra time to transpiled to javascript.
+
+### Can I do native changes in case of expo?
+
+Because you don't build any native code when using Expo to create a project, it's not possible to include custom native modules beyond the React Native APIs and components that are available in the Expo client app.
+
+### Limitation of React Native Expo?
+
+1. Not all iOS and Android APIs are available
+2. If you need to keep your app size extremely lean, expo build:[android|ios] may not be the best choice.
+3. Native libraries to integrate with proprietary services are usually not included in the SDK.
+4. The only supported third-party push notification service is the Expo notification service.
+5. The minimum supported OS versions are Android 5+ and iOS 10+.
+6. Free builds can sometimes be queued.
+7. Updates (JS and assets) for updates and builds are size-limited.
+8. Your app cannot target only children under 13 years old without customizing native dependencies.
